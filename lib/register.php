@@ -15,14 +15,13 @@
 	    $q = "select id from users where id='$id'";
             $arr = sendQuery($q);
             if(mysqli_num_rows($arr)>=1) {
-                echo "<meta http-equiv='refresh' content='0;url=../registration.php?error=1'>";
-	    }
+                exit('<script>alert("이미 존재하는 아이디 입니다.");history.go(-1)</script>');
+            }
 
  	    $q = "select homeid from users where homeid='$homeid'";
             $arr = sendQuery($q);
 	    if(mysqli_num_rows($arr)>=1) {
-            echo "<meta http-equiv='refresh' content='0;url=../registration.php?error=2'>";
-	        //exit('<script>alert("homeid exist");history.go(-1)</script>');
+	        //exit('<script>alert("이미 존재하는 이름 입니다.");history.go(-1)</script>');
 	    }
 	
 	    $q = "insert into users values ('$id', '$pw', '$homeid')";	
