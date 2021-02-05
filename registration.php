@@ -214,7 +214,7 @@ input {
 
         <div class="form__field" id="id__field">
           <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
-          <input id="register__username" type="text" name="id" class="form__input" placeholder="User ID" oninput="inputIdCheck(this.value)" required>
+          <input id="register__username" type="text" name="id" class="form__input" placeholder="Student ID" oninput="inputIdCheck(this.value)" required>
         </div>
           <div id="input_id_alert" class="input_alert">
               <icon class="fontawesome-warning-sign"></icon>

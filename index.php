@@ -173,10 +173,11 @@ input {
     <div class="grid__container">
 	<div class="login-logo" style="color:white; text-align:center">
 		<h1><b>MyWeb</b></h1>
+        <h3>로그인</h3>
 	  </div>
         <div>
             <p class="login-notice">
-                <label class="fontawesome-info-sign"></label> 사용자 아이디는 학번으로 설정해야 합니다.</p>
+<!--                <label class="fontawesome-info-sign"></label> 사용자 아이디는 학번으로 설정해야 합니다.</p>-->
          <?php
             if($_REQUEST['error']==1) {
                 echo "<div class='error-notice'><label class='fontawesome-warning-sign'></label>
@@ -196,7 +197,7 @@ input {
 
         <div class="form__field" id="id__field">
           <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
-          <input id="login__username" type="text" name="id" class="form__input" placeholder="User ID" required>
+          <input id="login__username" type="text" name="id" class="form__input" placeholder="Student ID" required>
         </div>
         <div class="form__field" id="pw__field">
           <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>

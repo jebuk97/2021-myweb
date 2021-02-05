@@ -183,7 +183,7 @@
     <div class="grid__container">
         <div class="login-logo" style="color:white; text-align:center">
             <h1><b>MyWeb</b></h1>
-            <h3>Reset Password</h3>
+            <h3>비밀번호 초기화</h3>
         </div>
         <div>
             <?php
